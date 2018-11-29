@@ -1,0 +1,41 @@
+{
+	"registros": [
+		{
+			"dia": "06/10/2018",
+			"hora": "06:00",
+			"termos": {
+				"bolsonaro": 18,
+				"haddad": 13,
+				"armas": 2,
+				"ateismo": 0
+			}
+		}, {
+			"dia": "06/10/2018",
+			"hora": "19:00",
+			"termos": {
+				"bolsonaro": 15,
+				"haddad": 9,
+				"armas": 1,
+				"ateismo": 0
+			}
+		}, {
+			"dia": "07/10/2018",
+			"hora": "06:00",
+			"termos": {
+				"bolsonaro": 10,
+				"haddad": 15,
+				"armas": 0,
+				"ateismo": 2
+			}
+		}, {
+			"dia": "07/10/2018",
+			"hora": "19:00",
+			"termos": {
+				"bolsonaro": 17,
+				"haddad": 13,
+				"armas": 3,
+				"ateismo": 1
+			}
+		}
+	]
+}

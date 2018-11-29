@@ -1,0 +1,152 @@
+// _menu.scss
+
+.menu-voltar{
+  display: block;
+  margin: 10px 20px;
+  text-shadow: 0 2px 4px rgba(0,0,0,.6);
+  transition: all ease .2s;
+  &:hover{
+    text-shadow: 0 1px 2px rgba(0,0,0,.3);
+  }
+  a{
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 14pt;
+    color: $cor_principal;
+    &:visited, &:active{
+      color: $cor_principal;
+      text-decoration: none;
+    }
+  }
+}
+.menu-oculto{
+  left: -250px !important;
+  box-shadow: none !important;
+  .botao-toggle-menu{
+    color: $quase_preto;
+    opacity: .3;
+    right: -15% !important;
+    &:hover{
+      color: $quase_preto !important;
+      opacity: 1;
+    }
+  }
+}
+.menu{
+  position: fixed;
+  z-index: 9996;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: $quase_branco;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  transition: all ease .3s;
+  box-shadow: 2px 0 16px 0 rgba(0,0,0,.3);
+
+  .botao-toggle-menu{
+    position: absolute;
+    display: flex;
+    top: 15px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: $quase_preto;
+    font-size: 16pt;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: all ease .2s;
+    outline: none;
+    &:hover{
+      color: $cor_secundaria;
+    }
+  }
+
+  ul{
+    margin-top: 15%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    li{
+      display: block;
+      margin: 0 20px;
+      &:last-child{
+        position: absolute;
+        width: 100%;
+        bottom: 20px;
+      }
+      a{
+        color: $quase_preto;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all ease .2s;
+        &:hover{
+          color: $cor_principal;
+        }
+      }
+      i{
+        padding-right: 5%;
+      }
+    }
+  }
+
+  .item-atual a{
+    color: $cor_principal !important;
+  }
+
+  .dados-usuario{
+    display: table;
+    padding: 0 15px;
+    img{
+      display: block;
+      position: relative;
+      float: left;
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,.3);
+    }
+    span{
+      display: table-cell;
+      width: 170px;
+      vertical-align: middle;
+      p{
+        font-weight: lighter;
+      }
+      a{
+        text-decoration: none;
+        color: $quase_preto;
+        font-size: 10pt;
+        font-weight: bold;
+        &:hover{
+          color: $cor_principal;
+        }
+      }
+    }
+  }
+
+  .modal-usuario{
+    width: 400px !important;
+    height: 200px !important;
+    img{
+      width: 100px;
+      height: 100px;
+      display: block;
+      position: relative;
+      float: left;
+      margin-right: 15px;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+    }
+    h1{
+      font-weight: lighter;
+      border-bottom: 1px solid $quase_preto;
+    }
+  }
+}

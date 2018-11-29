@@ -1,0 +1,114 @@
+/* variáveis de cor
+ * geradas utilizando o Material Design Color Tool:
+ * https://material.io/tools/color/#!/?view.left=0&view.right=0&secondary.color=1b87e5&primary.color=E53935
+*/
+$cor_principal: #E53935;
+$cor_principal_clara: #FF6F60;
+$cor_principal_escura: #AB000D;
+
+$cor_secundaria: #1B87E5;
+$cor_secundaria_clara: #69B6FF;
+$cor_secundaria_escura: #005BB2;
+
+$quase_preto: #000a12;
+$quase_branco: #efefef;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab|Open+Sans');
+
+@import 'partials/menu';
+@import 'partials/tela404';
+@import 'partials/cadastro';
+@import 'partials/login';
+@import 'partials/index';
+@import 'partials/dashboard';
+@import 'partials/modal';
+@import 'partials/rodape';
+@import 'partials/graficos';
+@import 'partials/usuario';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body{ 
+  min-width: 700px;
+}
+
+// mixin dos campos de formulário
+%input-formulario{
+  label{
+    display: block;
+    width: 100px;
+    margin-top: 4px;
+    margin-left: 4px;
+    bottom: 22pt;
+    position: relative;
+    font-size: 10pt;
+    opacity: .6;
+    transition: all ease .2s;
+    cursor: text;
+  }
+  input{
+    width: 300px;
+    margin: 4px 0;
+    padding: 2px 4px;
+    font-size: 12pt;
+    border: none;
+    outline: none;
+    &:focus ~ label{
+      opacity: 1;
+      bottom: 38pt;
+    }
+  }
+  .highlight-input{
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 2px;
+    background: #ccc;
+    bottom: -3px;
+    
+  }
+}
+%botao-submit-formulario{
+  position: relative;
+  width: 100px;
+  display: block;
+  position: relative;
+  margin: 5% auto 0 auto;
+  border-radius: 2px;
+  border: none;
+  padding: 6px 20px;
+  background: #03a9f4;
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,.6), 0 0 2px 0 rgba(0,0,0,.3);
+  color: white;
+  font-size: 12pt;
+  font-weight: lighter;
+  cursor: pointer;
+  transition: all ease .2s;
+  &:hover{
+    background: #039be5;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.3), 0 2px 4px 0 rgba(0,0,0,.3);
+  }
+}
+
+.main{
+  display: block;
+  color: #000a12;
+  
+  .main-layout{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    .main-container {
+      width: 100%;
+      transition: all ease .3s;
+    }
+    .main-container-full{
+      margin-left: 0 !important;
+    }    
+  }
+}

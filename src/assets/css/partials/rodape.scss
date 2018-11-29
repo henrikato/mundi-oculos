@@ -1,0 +1,32 @@
+.rodape{
+    display: flex;
+    background-image: radial-gradient(circle at top, $cor_principal, $cor_principal_escura);
+    padding: 5%;
+    box-shadow: inset 0 6px 4px 0 rgba(0,0,0,.3);
+    .primeira-lista{
+        width: 25%;
+        min-width: 200px;
+        text-align: center;
+        li{
+            list-style-type: none;
+            margin: 10px 0;
+            a{
+                text-decoration: none;
+                color: $quase_branco;
+                opacity: .6;
+                font-weight: lighter;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .texto{
+        margin-left: 5%;
+        color: $quase_branco;
+        p{
+            font-size: 10pt;
+            font-weight: lighter;
+        }
+    }
+}
